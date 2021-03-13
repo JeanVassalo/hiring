@@ -7,7 +7,6 @@ routes.get('/', api.test);
 //Stocks Quotes
 routes.get('/stocks/:stock_name/quote', api.getQuoteStock);
 
-
 // Query params - from & to ;
 routes.get('/stocks/:stock_name/history', api.getTimeSeriesStock);
 
