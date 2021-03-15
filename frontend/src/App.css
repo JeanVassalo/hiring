@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#App{
+  background-color: rgb(250, 250, 250);
+  color: rgb(17, 16, 16);
+  height: 900px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-color: rgb(0, 172, 210);
+  height: 100px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  margin: auto;
+  align-items: center;
+  max-width: 1140px;  
   display: flex;
-  flex-direction: column;
+  height: 100px;
+}
+.logo{
+  width: 220px;
+  padding-left: 10px;
+}
+.menu{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu ul,
+.menuli{
+  list-style: none;
+}
+.menu ul{
+  display: flex;
+}
+.menu li a{
+  color: rgb(20, 19, 19);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: larger;
+  font-weight: bold;
+  height: 100px;
+  border-bottom: 5px solid rgb(0, 172, 210);
+}
+.menu li .active,
+.menu li a:hover{
+  border-bottom: 5px solid black;
+  
+}
+
+#container{
+  background-color: rgb(250, 250, 250);
+  margin: auto;
+  max-width: 1140px;
+  
+}
+.searchArea{
+  padding: 50px;
+}
+.searchArea h2{
+  margin-bottom: 10px;
+}
+
+#stockField{
+  
+  margin-right: 10rem;
+  color: rgb(0, 0, 0);
+  
+}
+
+#container .bt-search{
+    width: 7rem;
+    height: 3rem;
+    margin-left: 1rem;
+    background: rgb(20, 18, 18);
+    margin-top: 5px;
+}
+
+#App .dataStock{
+  align-content: center;
+  margin: auto;
+  display: grid;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0.5em gray;
+  color: black;
+  width: 40rem;
+  height: 9rem;
+  grid-template-columns: repeat(3, 0.8fr);
+  font-size:x-large;  
+  justify-self: center;
+  justify-items: center;
+}
+
+#App .dataStock .divName{
+  margin: auto;
+  color: rgb(0, 172, 210);
+}
+
+#App .dataStock .divPrice{
+  padding-left: 20px;
+  color: darkslategrey;
+}
+
+#App .dataStock .divDate{
+  padding-left: 20px;
+  color: darkslategrey;
+}
+
+#App .dataStock > div{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#App .testStocks{
+  display: flex;
+  flex-direction: column;
+  background-color:none;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
